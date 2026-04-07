@@ -2,106 +2,169 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Les Délices Glacés</title>
+<title>Les Délices de NOONA</title>
+
 <style>
-body { font-family: Arial, sans-serif; background-color: #fff0f5; text-align: center; margin:0; padding:0; }
-header { background-color: #ff66b2; color: white; padding: 30px 0; }
-h1 { margin: 0; }
-.container { padding: 20px; }
-.glace { display: inline-block; margin: 20px; padding: 10px; border: 2px solid #ff66b2; border-radius: 10px; width: 220px; background-color: #ffe6f2; vertical-align: top; }
-.glace h2 { margin: 10px 0 5px 0; }
-.glace p { margin: 5px 0; font-weight: bold; }
-button { padding: 10px 20px; background-color: #ff66b2; color: white; border: none; border-radius: 5px; cursor: pointer; margin-top: 10px; }
-button:hover { background-color: #ff3385; }
-a { color: #2980b9; text-decoration: none; }
-a:hover { text-decoration: underline; }
-.whatsapp-btn { display:inline-block;padding:10px 20px;background-color:#25D366;color:white;border-radius:5px;text-decoration:none;margin-top:10px; }
+body {
+  margin:0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ffe6f2, #fff);
+}
+header {
+  background: linear-gradient(90deg, #ff66b2, #ff3385);
+  color:white;
+  text-align:center;
+  padding:50px 20px;
+}
+header h1 { font-size:42px; }
+header p { font-size:18px; }
+.container {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  padding:30px;
+}
+.glace {
+  background:white;
+  width:280px;
+  margin:20px;
+  border-radius:15px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.15);
+  overflow:hidden;
+  transition:0.3s;
+}
+.glace:hover { transform: scale(1.05); }
+.glace img {
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+.content { padding:15px; text-align:center; }
+.price {
+  color:#ff3385;
+  font-weight:bold;
+  margin:10px 0;
+  font-size:16px;
+}
+button {
+  width:100%;
+  padding:10px;
+  border:none;
+  background:#ff3385;
+  color:white;
+  border-radius:5px;
+  cursor:pointer;
+  margin-top:5px;
+}
+button:hover { background:#e60073; }
+.whatsapp {
+  display:block;
+  margin-top:10px;
+  padding:10px;
+  background:#25D366;
+  color:white;
+  text-decoration:none;
+  border-radius:5px;
+  transition:0.3s;
+}
+.whatsapp:hover { opacity:0.9; }
+footer {
+  text-align:center;
+  padding:20px;
+  background:#ff66b2;
+  color:white;
+  font-weight:bold;
+}
 </style>
 </head>
+
 <body>
+
 <header>
-<h1>Les Délices Glacés 🍦</h1>
-<p>Glaces artisanales à plusieurs saveurs</p>
+<h1>🍦 Les Délices de NOONA</h1>
+<p>Des saveurs artisanales disponibles en gros et en détail</p>
 </header>
 
 <div class="container">
 
-<!-- Vanille -->
+<!-- VANILLE -->
 <div class="glace">
+<img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=400&q=80" alt="Vanille">
+<div class="content">
 <h2>Vanille</h2>
-<p>2 € / 1 310 FCFA</p>
-<form action="mailto:felixballo756@gmail.com" method="post" enctype="text/plain">
-<input type="text" name="client" placeholder="Votre nom" required><br>
-<input type="email" name="email" placeholder="Votre email" required><br>
-<input type="hidden" name="produit" value="Vanille">
-<button type="submit">Commander</button>
-</form>
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="TON_CODE_PAYPAL">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="Payez avec PayPal ou carte bancaire">
-</form>
-<a href="https://moovmobilemoney.com/paymentlink?amount=1310&recipient=2290157595980" target="_blank">Payer avec Moov Mobile Money</a><br>
-<a href="https://wa.me/2290157595980" target="_blank" class="whatsapp-btn">Contacter sur WhatsApp</a>
+<p class="price">Prix : 250 F CFA à 10 000 F CFA</p>
+<a href="https://moovmobilemoney.com/paymentlink?amount=1310&recipient=2290144013062" target="_blank">
+<button>Payer avec Moov / Mobile Money / Celtics</button></a>
+<a href="https://wa.me/2290144013062?text=Bonjour%20je%20veux%20commander%20une%20glace%20Vanille" class="whatsapp">WhatsApp</a>
+</div>
 </div>
 
-<!-- Chocolat -->
+<!-- FRAISE -->
 <div class="glace">
-<h2>Chocolat</h2>
-<p>2,50 € / 1 640 FCFA</p>
-<form action="mailto:felixballo756@gmail.com" method="post" enctype="text/plain">
-<input type="text" name="client" placeholder="Votre nom" required><br>
-<input type="email" name="email" placeholder="Votre email" required><br>
-<input type="hidden" name="produit" value="Chocolat">
-<button type="submit">Commander</button>
-</form>
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="TON_CODE_PAYPAL">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="Payez avec PayPal ou carte bancaire">
-</form>
-<a href="https://moovmobilemoney.com/paymentlink?amount=1640&recipient=2290157595980" target="_blank">Payer avec Moov Mobile Money</a><br>
-<a href="https://wa.me/2290157595980" target="_blank" class="whatsapp-btn">Contacter sur WhatsApp</a>
-</div>
-
-<!-- Fraise -->
-<div class="glace">
+<img src="https://images.unsplash.com/photo-1497051788611-2c64812349a0?auto=format&fit=crop&w=400&q=80" alt="Fraise">
+<div class="content">
 <h2>Fraise</h2>
-<p>2 € / 1 310 FCFA</p>
-<form action="mailto:felixballo756@gmail.com" method="post" enctype="text/plain">
-<input type="text" name="client" placeholder="Votre nom" required><br>
-<input type="email" name="email" placeholder="Votre email" required><br>
-<input type="hidden" name="produit" value="Fraise">
-<button type="submit">Commander</button>
-</form>
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="TON_CODE_PAYPAL">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="Payez avec PayPal ou carte bancaire">
-</form>
-<a href="https://moovmobilemoney.com/paymentlink?amount=1310&recipient=2290157595980" target="_blank">Payer avec Moov Mobile Money</a><br>
-<a href="https://wa.me/2290157595980" target="_blank" class="whatsapp-btn">Contacter sur WhatsApp</a>
+<p class="price">Prix : 250 F CFA à 10 000 F CFA</p>
+<a href="https://moovmobilemoney.com/paymentlink?amount=1310&recipient=2290144013062" target="_blank">
+<button>Payer avec Moov / Mobile Money / Celtics</button></a>
+<a href="https://wa.me/2290144013062?text=Bonjour%20je%20veux%20commander%20une%20glace%20Fraise" class="whatsapp">WhatsApp</a>
+</div>
 </div>
 
-<!-- Menthe-Choco -->
+<!-- CHOCOLAT -->
 <div class="glace">
-<h2>Menthe-Choco</h2>
-<p>2,50 € / 1 640 FCFA</p>
-<form action="mailto:felixballo756@gmail.com" method="post" enctype="text/plain">
-<input type="text" name="client" placeholder="Votre nom" required><br>
-<input type="email" name="email" placeholder="Votre email" required><br>
-<input type="hidden" name="produit" value="Menthe-Choco">
-<button type="submit">Commander</button>
-</form>
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="TON_CODE_PAYPAL">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="Payez avec PayPal ou carte bancaire">
-</form>
-<a href="https://moovmobilemoney.com/paymentlink?amount=1640&recipient=2290157595980" target="_blank">Payer avec Moov Mobile Money</a><br>
-<a href="https://wa.me/2290157595980" target="_blank" class="whatsapp-btn">Contacter sur WhatsApp</a>
+<img src="https://images.unsplash.com/photo-1603030938653-7c02d3182c60?auto=format&fit=crop&w=400&q=80" alt="Chocolat">
+<div class="content">
+<h2>Chocolat</h2>
+<p class="price">Prix : 250 F CFA à 10 000 F CFA</p>
+<a href="https://moovmobilemoney.com/paymentlink?amount=1640&recipient=2290144013062" target="_blank">
+<button>Payer avec Moov / Mobile Money / Celtics</button></a>
+<a href="https://wa.me/2290144013062?text=Bonjour%20je%20veux%20commander%20une%20glace%20Chocolat" class="whatsapp">WhatsApp</a>
+</div>
+</div>
+
+<!-- ANANAS -->
+<div class="glace">
+<img src="https://images.unsplash.com/photo-1568158872103-9970b4e40a5c?auto=format&fit=crop&w=400&q=80" alt="Ananas">
+<div class="content">
+<h2>Ananas</h2>
+<p class="price">Prix : 250 F CFA à 10 000 F CFA</p>
+<a href="https://moovmobilemoney.com/paymentlink?amount=1310&recipient=2290144013062" target="_blank">
+<button>Payer avec Moov / Mobile Money / Celtics</button></a>
+<a href="https://wa.me/2290144013062?text=Bonjour%20je%20veux%20commander%20une%20glace%20Ananas" class="whatsapp">WhatsApp</a>
+</div>
+</div>
+
+<!-- CARAMEL -->
+<div class="glace">
+<img src="https://images.unsplash.com/photo-1624853238701-8c62095eb39b?auto=format&fit=crop&w=400&q=80" alt="Caramel">
+<div class="content">
+<h2>Caramel</h2>
+<p class="price">Prix : 250 F CFA à 10 000 F CFA</p>
+<a href="https://moovmobilemoney.com/paymentlink?amount=1640&recipient=2290144013062" target="_blank">
+<button>Payer avec Moov / Mobile Money / Celtics</button></a>
+<a href="https://wa.me/2290144013062?text=Bonjour%20je%20veux%20commander%20une%20glace%20Caramel" class="whatsapp">WhatsApp</a>
+</div>
+</div>
+
+<!-- CACAO -->
+<div class="glace">
+<img src="https://images.unsplash.com/photo-1590080875326-68a1d19d1f9d?auto=format&fit=crop&w=400&q=80" alt="Cacao">
+<div class="content">
+<h2>Cacao</h2>
+<p class="price">Prix : 250 F CFA à 10 000 F CFA</p>
+<a href="https://moovmobilemoney.com/paymentlink?amount=1640&recipient=2290144013062" target="_blank">
+<button>Payer avec Moov / Mobile Money / Celtics</button></a>
+<a href="https://wa.me/2290144013062?text=Bonjour%20je%20veux%20commander%20une%20glace%20Cacao" class="whatsapp">WhatsApp</a>
+</div>
 </div>
 
 </div>
+
+<footer>
+Livraison à domicile possible 🚚  
+© 2026 Les Délices de NOONA - Tous droits réservés
+</footer>
+
 </body>
 </html>
